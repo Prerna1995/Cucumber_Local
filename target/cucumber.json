@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T06:59:47.914Z",
+        "line": 22,
+        "name": "Positive scenario to test login fuctionality",
+        "description": "",
+        "id": "login-into-amazon-website;positive-scenario-to-test-login-fuctionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1627000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User has opened amazon website on Chrome Browser",
+            "match": {
+              "location": "test.Login_StepDef.user_has_opened_amazon_website_on_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2597000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters correct \"prerna@xya.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prerna@xya.com",
+                  "offset": 21
+                },
+                {
+                  "val": "abc123",
+                  "offset": 42
+                }
+              ],
+              "location": "test.Login_StepDef.user_enters_correct_something_and_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be able to login successfully",
+            "match": {
+              "location": "test.Login_StepDef.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login into amazon website",
+    "description": "",
+    "id": "login-into-amazon-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/test/LoginWithParam.feature",
+    "tags": []
+  }
+]
